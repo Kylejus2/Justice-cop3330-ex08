@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] Strings) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("How many people?: ");
+        int people = input.nextInt();
+
+        System.out.print("How many pizzas: ");
+        int pizzas = input.nextInt();
+
+        System.out.print("How many slices per pizza: ");
+        int sliceper = input.nextInt();
+        int slices = sliceper*pizzas;
+        System.out.print(people+ " people with "+ pizzas+" pizzas ("+slices+" slices)");
+        int spp = (slices / people);
+        int remainder = pizzas % people;
+        System.out.print("\nEach person gets "+spp+" slices with "+remainder+" slices left over");
+    }
+    
+}
