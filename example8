@@ -16,7 +16,7 @@ public class Main {
         int slices = sliceper*pizzas;
         System.out.print(people+ " people with "+ pizzas+" pizzas ("+slices+" slices)");
         int spp = (slices / people);
-        int remainder = pizzas % people;
+        int remainder = (slices % people);
         System.out.print("\nEach person gets "+spp+" slices with "+remainder+" slices left over");
     }
     
